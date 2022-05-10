@@ -1,6 +1,8 @@
 import Device from "../components/devices/Device";
 import {useState} from 'react'
 function DevicesPage(){
+  //chuyen doi che do
+  //cap nhat du lieu thu cong
     const[serverData,setServerData]=useState({});
     function sendRequest(changedData){
         fetch(

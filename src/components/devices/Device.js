@@ -15,10 +15,9 @@ function Device(props) {
     <Card>
       <form className={classes.form}>
         <div>
-          <label className={classes.name}>{props.deviceName}
-          </label>
+          <label className={classes.name}>{props.deviceName}</label>
           </div>
-        <textarea rows="10" cols="50" required id="description">{props.data}</textarea>
+        {/* <textarea rows="10" cols="50" required id="description">{props.data}</textarea> */}
         <label className={classes.switch}>
           <input type="checkbox" onChange={handleChange}></input>
           <span className={`${classes.slider} ${classes.round}` }></span>
