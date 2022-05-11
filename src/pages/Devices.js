@@ -29,6 +29,7 @@ function DevicesPage(){
             <Device deviceName="Buzzer" ></Device>
             <Device deviceName="Single Push Button"></Device>
             <Device deviceName="Light sensor"></Device>
+            <Device deviceName="Chế độ có nhà"></Device>
         </section>
     );
 }

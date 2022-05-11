@@ -1,6 +1,7 @@
 import Card from "../ui/Card";
 import classes from "./Device.module.css";
 import {useRef} from 'react'
+import ToggleSwitch from "../ui/ToggleButton";
 function Device(props) {
   const buttonInputRef=useRef();
   function handleChange(event){
@@ -14,14 +15,8 @@ function Device(props) {
   return (
     <Card>
       <form className={classes.form}>
-        <div>
-          <label className={classes.name}>{props.deviceName}</label>
-          </div>
         {/* <textarea rows="10" cols="50" required id="description">{props.data}</textarea> */}
-        <label className={classes.switch}>
-          <input type="checkbox" onChange={handleChange}></input>
-          <span className={`${classes.slider} ${classes.round}` }></span>
-        </label>
+        <ToggleSwitch label={props.deviceName}/>
       </form>
     </Card>
   );
